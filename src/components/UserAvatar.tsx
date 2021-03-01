@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles, Fab } from '@material-ui/core'
 import GradientCircularProgress from './GradientCircularProgress'
-import { green } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   container: {
