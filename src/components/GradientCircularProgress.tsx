@@ -12,8 +12,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   container: {
     position: 'absolute',
-    top: -10,
-    left: -10,
+    top: -8,
+    left: -8,
     zIndex: 1,
     height: '100%',
   },
@@ -34,12 +34,12 @@ const GradientCircularProgress:React.FC<GradientCircularProgressProps> = ({ trus
         </linearGradient>
       </svg>
       <CircularProgress
-        thickness={4}
+        thickness={3}
         classes={{ circle: classes.circle }}
         value={trust}
         variant="determinate" 
         className={classes.white}
-        size={100}
+        size={96}
       />
     </div>
   );

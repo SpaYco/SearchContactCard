@@ -40,12 +40,13 @@ const useStyles = makeStyles((theme) => ({
 interface UserAvatarProps {
   profileImageUrl: string;
   trust: number;
+  style?: object;
 }
 
-const UserAvatar: React.FC<UserAvatarProps> = ({ profileImageUrl, trust }) => {
+const UserAvatar: React.FC<UserAvatarProps> = ({ profileImageUrl, trust, style={} }) => {
   const classes = useStyles();
   return (
-    <div className={classes.container}>
+    <div className={classes.container} style={style}>
       <img src={profileImageUrl} alt="profile" className={classes.image}/>
       <GradientCircularProgress trust={trust} />
       <div className={classes.trust}>
