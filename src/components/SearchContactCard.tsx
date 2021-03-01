@@ -59,8 +59,12 @@ const SearchContactCard: React.FC<userData> = ({ data }) => {
           spacing={1}
           justify="center"
         >
-          <Grid item xs={4} style={{ position: "relative"}}>
-            <UserAvatar profileImageUrl={profileImageUrl} trust={trust} style={{ position: "absolute", top: "-60px"}}/>
+          <Grid item xs={4} style={{ position: "relative" }}>
+            <UserAvatar
+              profileImageUrl={profileImageUrl}
+              trust={trust}
+              style={{ position: "absolute", top: "-60px" }}
+            />
           </Grid>
           <Grid item xs={5}>
             <Grid
