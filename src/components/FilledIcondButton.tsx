@@ -1,15 +1,6 @@
 import React from "react";
-import { Button, createMuiTheme, makeStyles } from "@material-ui/core";
-import { ThemeProvider } from "@material-ui/styles";
+import { Button, makeStyles } from "@material-ui/core";
 import AddRoundedIcon from "@material-ui/icons/AddRounded";
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#794BFF",
-    },
-  },
-});
 
 const useStyles = makeStyles({
   button: {
@@ -27,11 +18,9 @@ const useStyles = makeStyles({
 const FilledIcondButton: React.FC = () => {
   const classes = useStyles();
   return (
-    <ThemeProvider theme={theme}>
       <Button variant="outlined" color="primary" className={classes.button}>
         <AddRoundedIcon />
       </Button>
-    </ThemeProvider>
   );
 };
 
