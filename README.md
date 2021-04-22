@@ -1,6 +1,6 @@
 # SearchContactCard
 
-> This is a SearchContactCard
+> This is a SearchContactCard made with React.js and Material-UI
 
 ## Built With
 
